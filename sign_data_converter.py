@@ -15,8 +15,6 @@ class Converter:
         self.data_files = data_files
         self.columns = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S']
         self.result_file = result_file
-        sss = open(result_file, "w")
-        sss.close()
 
     def convert(self):
         workbook = xlsxwriter.Workbook(self.result_file)
@@ -55,20 +53,19 @@ class Converter:
 attr = ['x', 'y', 'z', 'roll', 'pitch', 'yaw', 'thumb', 'fore', 'index', 'ring', 'little',
         'keycode', 'gs1', 'gs2', 'receiver values', 'label', 'test sample name']
 
-try:
-    print(sys.argv[1].split("/")[1])
-    person = sys.argv[1].split("/")[1]
-    print(os.path.dirname(sys.argv[1]),"sss")
-    if len(sys.argv) < 3:
-        data_file = [f for f in os.listdir(sys.argv[1]) if os.path.isfile(os.path.join(sys.argv[1], f))]
-        result_file = person + ".xlsx"
-        label = data_file[0]
-        print(data_file[0])
-    else:
-        result_file = sys.argv[2]
-    data_file = [os.path.join(sys.argv[1], f) for f in os.listdir(sys.argv[1]) if
-                 os.path.isfile(os.path.join(sys.argv[1], f))]
-    c = Converter(data_file, attr, result_file, person=person)
-    c.convert()
-except IndexError:
-    print('file not found')
+holders = [os.path.join(sys.argv[1],f) for f in os.listdir(sys.argv[1]) if not os.path.isfile(os.path.join(sys.argv[1], f))]
+for holder in holders:
+    try:
+        print(holder)
+        person = holder
+        data_file = [(os.path.join(holder,f))
+                     for f in os.listdir(holder) if os.path.isfile(os.path.join(holder,f))]
+        result_file = person.split("/")[1] + "s.xlsx"
+
+        if(len(sys.argv)>=3):
+            result_file = os.path.join(sys.argv[2],person.split("/")[1])+".xlsx"
+        print(result_file)
+        c = Converter(data_file, attr, result_file, person=person)
+        c.convert()
+    except IndexError:
+        print('file not found')
