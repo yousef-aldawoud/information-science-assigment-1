@@ -19,8 +19,6 @@ class Converter:
     def convert(self):
         workbook = xlsxwriter.Workbook(self.result_file)
         worksheet = workbook.add_worksheet()
-        for count in range(len(self.attributes)):
-            worksheet.write(self.columns[count] + '1', self.attributes[count])
         file_count = 0
         for file in self.data_files:
             file_count += 1
@@ -30,10 +28,10 @@ class Converter:
                 self.line_count += 1
                 attrs = self.get_row_attributes(lines[i], self.attributes_splitter)
                 for n in range(len(attrs)):
-                    worksheet.write(self.columns[n] + str(self.line_count + 1), attrs[n])
+                    worksheet.write(self.columns[n] + str(self.line_count), attrs[n])
 
-                worksheet.write(self.columns[len(attr) - 2] + str(self.line_count + 1), label)
-                worksheet.write(self.columns[len(attr) - 1] + str(self.line_count + 1), self.person)
+                worksheet.write(self.columns[len(attr) - 2] + str(self.line_count), label)
+                worksheet.write(self.columns[len(attr) - 1] + str(self.line_count), self.person)
 
         workbook.close()
         print("Converted "+str(len(self.data_files))+" files to "+self.result_file)
@@ -60,12 +58,12 @@ for holder in holders:
         person = holder
         data_file = [(os.path.join(holder,f))
                      for f in os.listdir(holder) if os.path.isfile(os.path.join(holder,f))]
-        result_file = person.split("/")[1] + "s.xlsx"
+        result_file = person.split("/")[1] + ".xlsx"
 
         if(len(sys.argv)>=3):
             result_file = os.path.join(sys.argv[2],person.split("/")[1])+".xlsx"
         print(result_file)
-        c = Converter(data_file, attr, result_file, person=person)
+        c = Converter(data_file, attr, result_file, person=person.split("/")[1][:-1])
         c.convert()
     except IndexError:
         print('file not found')
