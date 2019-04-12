@@ -1,0 +1,309 @@
+getBoxplot
+uiopen('C:\Users\vxn1903\Desktop\ass app\x hand posotion by sign language.fig',1)
+uiopen('C:\Users\vxn1903\Desktop\ass app\y hand posotion by sign language.fig',1)
+getBoxplot
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('internal.stats.parseArgs', 'C:\Program Files\MATLAB\R2018b\toolbox\stats\stats\+internal\+stats\parseArgs.m', 42)" style="font-weight:bold">internal.stats.parseArgs</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\stats\stats\+internal\+stats\parseArgs.m',42,0)">line 42</a>)
+Wrong number of arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('boxplot>parseArgs', 'C:\Program Files\MATLAB\R2018b\toolbox\stats\stats\boxplot.m', 556)" style="font-weight:bold">boxplot>parseArgs</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\stats\stats\boxplot.m',556,0)">line 556</a>)
+          internal.stats.parseArgs(okargs,defaults,inargs{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('boxplot', 'C:\Program Files\MATLAB\R2018b\toolbox\stats\stats\boxplot.m', 257)" style="font-weight:bold">boxplot</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\stats\stats\boxplot.m',257,0)">line 257</a>)
+    = parseArgs(varargin);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('getBoxplot', 'C:\Users\vxn1903\Desktop\ass app\getBoxplot.m', 7)" style="font-weight:bold">getBoxplot</a> (<a href="matlab: opentoline('C:\Users\vxn1903\Desktop\ass app\getBoxplot.m',7,0)">line 7</a>)
+thumb=boxplot(dataArray(:,changingValue),dataLabels,'b-', 'LineWidth', 2);
+} 
+getBoxplot
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('plot')" style="font-weight:bold">plot</a>
+Invalid parameter/value pair arguments
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('getBoxplot', 'C:\Users\vxn1903\Desktop\ass app\getBoxplot.m', 9)" style="font-weight:bold">getBoxplot</a> (<a href="matlab: opentoline('C:\Users\vxn1903\Desktop\ass app\getBoxplot.m',9,0)">line 9</a>)
+plot(dataArray(:,changingValue),dataLabels,'b-', 'LineWidth', 2);
+} 
+getBoxplot
+getBoxplot
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('scatter', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\specgraph\scatter.m', 56)" style="font-weight:bold">scatter</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\specgraph\scatter.m',56,0)">line 56</a>)
+Input arguments must be numeric, datetime, duration or categorical.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('getBoxplot', 'C:\Users\vxn1903\Desktop\ass app\getBoxplot.m', 7)" style="font-weight:bold">getBoxplot</a> (<a href="matlab: opentoline('C:\Users\vxn1903\Desktop\ass app\getBoxplot.m',7,0)">line 7</a>)
+thumb=scatter(dataArray(:,changingValue),dataLabels,'b','*');
+} 
+getBoxplot
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('scatter', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\specgraph\scatter.m', 56)" style="font-weight:bold">scatter</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\specgraph\scatter.m',56,0)">line 56</a>)
+Input arguments must be numeric, datetime, duration or categorical.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('getBoxplot', 'C:\Users\vxn1903\Desktop\ass app\getBoxplot.m', 7)" style="font-weight:bold">getBoxplot</a> (<a href="matlab: opentoline('C:\Users\vxn1903\Desktop\ass app\getBoxplot.m',7,0)">line 7</a>)
+thumb=scatter(dataArray(:,changingValue),dataLabels);
+} 
+getBoxplot
+getScatter
+getScatter
+ax1=subplot(x,y)
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('subplot', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\graph2d\subplot.p', 212)" style="font-weight:bold">subplot</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\graph2d\subplot.p',212,0)">line 212</a>)
+Invalid syntax.
+} 
+ax1=subplot(x,y,y)
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('subplot', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\graph2d\subplot.p', 329)" style="font-weight:bold">subplot</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\graph2d\subplot.p',329,0)">line 329</a>)
+Illegal plot number.
+} 
+ax1=subplot(x,y,2)
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mtimes')" style="font-weight:bold"> * </a>
+Incorrect dimensions for matrix multiplication. Check that the number of columns in the first matrix matches the number of rows in
+the second matrix. To perform elementwise multiplication, use '.*'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('subplot', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\graph2d\subplot.p', 330)" style="font-weight:bold">subplot</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\graph2d\subplot.p',330,0)">line 330</a>)
+            elseif max(plotId) > nCols * nRows
+} 
+getScatter
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('plot')" style="font-weight:bold">plot</a>
+Invalid data argument.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('getScatter', 'C:\Users\vxn1903\Desktop\ass app\getScatter.m', 13)" style="font-weight:bold">getScatter</a> (<a href="matlab: opentoline('C:\Users\vxn1903\Desktop\ass app\getScatter.m',13,0)">line 13</a>)
+op=plot(x,y,'b','*');
+} 
+getScatter
+getScatter
+doc polyfit
+getScatter
+[Warning: Polynomial is badly conditioned. Add points with distinct X values, reduce the degree of the polynomial, or try centering
+and scaling as described in HELP POLYFIT.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('polyfit', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\polyfun\polyfit.m', 79)" style="font-weight:bold">polyfit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\polyfun\polyfit.m',79,0)">line 79</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('getScatter', 'C:\Users\vxn1903\Desktop\ass app\getScatter.m', 13)" style="font-weight:bold">getScatter</a> (<a href="matlab: opentoline('C:\Users\vxn1903\Desktop\ass app\getScatter.m',13,0)">line 13</a>)] 
+getScatter
+[Warning: Polynomial is badly conditioned. Add points with distinct X values, reduce the degree of the polynomial, or try centering
+and scaling as described in HELP POLYFIT.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('polyfit', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\polyfun\polyfit.m', 79)" style="font-weight:bold">polyfit</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\polyfun\polyfit.m',79,0)">line 79</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('getScatter', 'C:\Users\vxn1903\Desktop\ass app\getScatter.m', 13)" style="font-weight:bold">getScatter</a> (<a href="matlab: opentoline('C:\Users\vxn1903\Desktop\ass app\getScatter.m',13,0)">line 13</a>)] 
+getScatter
+getScatter
+getScatter
+{No appropriate method, property, or field 'linspace' for class 'matlab.graphics.chart.primitive.Scatter'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('getScatter', 'C:\Users\vxn1903\Desktop\ass app\getScatter.m', 14)" style="font-weight:bold">getScatter</a> (<a href="matlab: opentoline('C:\Users\vxn1903\Desktop\ass app\getScatter.m',14,0)">line 14</a>)
+op.linspace(0,15,30);
+} 
+getScatter
+{No appropriate method, property, or field 'linspace' for class 'matlab.graphics.chart.primitive.Scatter'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('getScatter', 'C:\Users\vxn1903\Desktop\ass app\getScatter.m', 14)" style="font-weight:bold">getScatter</a> (<a href="matlab: opentoline('C:\Users\vxn1903\Desktop\ass app\getScatter.m',14,0)">line 14</a>)
+op.linspace(0,15,30);
+} 
+getScatter
+corrrrr=corrcoef(x,y)
+
+corrrrr =
+
+    1.0000   -0.4872
+   -0.4872    1.0000
+
+x(1)
+
+ans =
+
+    0.0078
+
+x(1)*-0.4872
+
+ans =
+
+   -0.0038
+
+y(1)
+
+ans =
+
+    0.0078
+
+x(2)*-0.4872
+
+ans =
+
+   -0.0038
+
+y(2)
+
+ans =
+
+     0
+
+x(2)/0.4872
+
+ans =
+
+    0.0160
+
+x(2)/0.4872
+
+ans =
+
+    0.0160
+
+y(2)
+
+ans =
+
+     0
+
+y(1)/-0.4872 
+
+ans =
+
+   -0.0160
+
+x(1)
+
+ans =
+
+    0.0078
+
+y(1)*-0.4872
+
+ans =
+
+   -0.0038
+
+getBoxplot
+getBoxplot
+getBoxplot
+nbApp
+nbApp
+precision
+
+precision =
+
+  <a href="matlab:helpPopup function_handle" style="font-weight:bold">function_handle</a> with value:
+
+    @(confusionmatNB)diag(confusionmatNB)./sum(confusionMat,2)
+
+precision(confusionmatNB)
+{Cannot find an exact (case-sensitive) match for 'confusionMat'
+
+The closest match is: confusionmat in C:\Program Files\MATLAB\R2018b\toolbox\shared\mlearnlib\confusionmat.m
+
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('nbApp>@(confusionmatNB)diag(confusionmatNB)./sum(confusionMat,2)')" style="font-weight:bold">nbApp>@(confusionmatNB)diag(confusionmatNB)./sum(confusionMat,2)</a>
+} 
+matlab.internal.language.introspective.errorDocCallback('nbApp>@(confusionmatNB)diag(confusionmatNB)./sum(confusionMat,2)')
+precision(confusionmatNB)
+{Cannot find an exact (case-sensitive) match for 'confusionMat'
+
+The closest match is: confusionmat in C:\Program Files\MATLAB\R2018b\toolbox\shared\mlearnlib\confusionmat.m
+
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('nbApp>@(confusionmatNB)diag(confusionmatNB)./sum(confusionMat,2)')" style="font-weight:bold">nbApp>@(confusionmatNB)diag(confusionmatNB)./sum(confusionMat,2)</a>
+} 
+nbApp
+precision(confusionmatNB)
+
+ans =
+
+    0.2452
+    0.3443
+    0.3048
+    0.6961
+    0.2450
+    0.8113
+    0.4545
+    0.2667
+    0.4468
+    0.6786
+    0.4783
+    0.6286
+    0.5926
+    0.7500
+
+nbApp
+{Undefined function or variable 'confMat'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('nbApp', 'C:\Users\vxn1903\Desktop\ass app\nbApp.m', 15)" style="font-weight:bold">nbApp</a> (<a href="matlab: opentoline('C:\Users\vxn1903\Desktop\ass app\nbApp.m',15,0)">line 15</a>)
+    recall(i)=confusionmatNB(i,i)/sum(confMat(i,:));
+} 
+nbApp
+nbApp
+knnapp
+treeApp
+knnapp
+nbApp
+knnapp
+{Error: <a href="matlab: opentoline('C:\Users\vxn1903\Desktop\ass app\knnapp.m',16,8)">File: knnapp.m Line: 16 Column: 8
+</a>Incorrect use of '=' operator. To assign a value to a variable, use '='. To compare values for equality, use '=='.
+} 
+knnapp
+{Undefined function or variable 'confMat'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('knnapp', 'C:\Users\vxn1903\Desktop\ass app\knnapp.m', 16)" style="font-weight:bold">knnapp</a> (<a href="matlab: opentoline('C:\Users\vxn1903\Desktop\ass app\knnapp.m',16,0)">line 16</a>)
+Recall=sum(recall)/size(confMat,1);
+} 
+knnapp
+knnapp
+{Undefined function or variable 'confMat'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('knnapp', 'C:\Users\vxn1903\Desktop\ass app\knnapp.m', 18)" style="font-weight:bold">knnapp</a> (<a href="matlab: opentoline('C:\Users\vxn1903\Desktop\ass app\knnapp.m',18,0)">line 18</a>)
+for i =1:size(confMat,1)
+} 
+knnapp
+{Conversion to function_handle from double is not possible.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('knnapp', 'C:\Users\vxn1903\Desktop\ass app\knnapp.m', 19)" style="font-weight:bold">knnapp</a> (<a href="matlab: opentoline('C:\Users\vxn1903\Desktop\ass app\knnapp.m',19,0)">line 19</a>)
+    precision(i)=confusionmatKNN(i,i)/sum(confusionmatKNN(:,i));
+} 
+clear precision
+knnapp
+knnapp
+knnapp
+nbApp
+nbApp
+knnapp
+knnapp
+knnapp
+knnapp
+knnapp
+knnapp
+knnapp
+knnapp
+knnapp
+knnapp
+knnapp
+knnapp
+knnapp
+treeApp
+knnapp
+knnapp
+knnapp
+knnapp
+knnapp
+knnapp
+knnapp
+knnapp
+knnapp
+knnapp
+knnapp
+knnapp
+knnapp
+knnapp
+knnapp
+knnapp
+knnapp
+knnapp
+knnapp
+knnapp
+treeApp
+treeApp
+treeApp
+treeApp
+treeApp
+treeApp
+treeApp
+treeApp
+treeApp
+treeApp
+treeApp
+treeApp
+treeApp
+treeApp
+treeApp
+treeApp
+treeApp
+treeApp
+treeA

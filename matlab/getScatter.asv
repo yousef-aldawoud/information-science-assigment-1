@@ -1,0 +1,4 @@
+
+x=testingArray(,:);
+y=testingArray(:,:)
+scatter(x,y);
